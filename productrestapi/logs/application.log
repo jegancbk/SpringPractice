@@ -1,0 +1,520 @@
+2020-04-09 00:43:24.252  WARN 27297 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:43:29.261  INFO 27297 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 27297 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:43:29.262  INFO 27297 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-09 00:43:30.186  INFO 27297 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:43:30.245  INFO 27297 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 1 JPA repository interfaces.
+2020-04-09 00:43:30.788  INFO 27297 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 00:43:30.797  INFO 27297 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 00:43:30.797  INFO 27297 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-09 00:43:30.903  INFO 27297 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-09 00:43:30.904  INFO 27297 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1601 ms
+2020-04-09 00:43:31.103  INFO 27297 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:43:31.120  INFO 27297 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-09 00:43:31.130  INFO 27297 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-09 00:43:31.131  INFO 27297 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:43:31.488  INFO 27297 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:43:32.080  INFO 27297 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:43:32.252  INFO 27297 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:43:32.254  INFO 27297 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:43:32.268  INFO 27297 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-09 00:43:34.326  INFO 27297 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436 this
+]
+
+2020-04-09 00:43:34.353  INFO 27297 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-09 00:43:34.540  INFO 27297 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:43:34.903  INFO 27297 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:43:34.954  INFO 27297 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:43:35.051  INFO 27297 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:43:35.243  INFO 27297 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:43:35.365  INFO 27297 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:43:36.157  INFO 27297 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:43:36.166  INFO 27297 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:43:36.520  WARN 27297 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:43:36.648  INFO 27297 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:43:36.981  INFO 27297 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dbb0650c-cda5-49b3-8928-7fb3536e4f40
+
+2020-04-09 00:43:37.093  INFO 27297 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e6bbe63, org.springframework.security.web.context.SecurityContextPersistenceFilter@3506bc8b, org.springframework.security.web.header.HeaderWriterFilter@52fe87e0, org.springframework.security.web.csrf.CsrfFilter@5e5a2b74, org.springframework.security.web.authentication.logout.LogoutFilter@3a44993c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@282240, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f833223, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69356aca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12811f95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@368d51ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@542754be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a17ffee, org.springframework.security.web.session.SessionManagementFilter@4866a755, org.springframework.security.web.access.ExceptionTranslationFilter@73818435, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d4b32d1]
+2020-04-09 00:43:37.134  INFO 27297 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:43:37.207  INFO 27297 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-09 00:43:37.209  INFO 27297 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 23.313 seconds (JVM running for 28.81)
+2020-04-09 00:43:37.330  INFO 27297 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 00:43:37.331  INFO 27297 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 00:43:37.341  INFO 27297 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-04-09 00:43:56.547  WARN 27302 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:44:01.555  INFO 27302 --- [main] c.j.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests on Jegans-MacBook-Pro.local with PID 27302 (started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:44:01.556  INFO 27302 --- [main] c.j.s.ProductrestapiApplicationTests     : The following profiles are active: testing
+2020-04-09 00:44:02.435  INFO 27302 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:44:02.502  INFO 27302 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 1 JPA repository interfaces.
+2020-04-09 00:44:03.226  INFO 27302 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:44:03.242  INFO 27302 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5702, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5702], bind any local is true
+2020-04-09 00:44:03.257  INFO 27302 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5702
+2020-04-09 00:44:03.257  INFO 27302 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:44:03.495  INFO 27302 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5702 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:44:04.022  INFO 27302 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:44:04.226  INFO 27302 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5702 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:44:04.228  INFO 27302 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5702 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:44:04.234  INFO 27302 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTING
+2020-04-09 00:44:04.415  INFO 27302 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.0.34]:5702 [dev] [3.12.6] Trying to join to discovered node: [192.168.0.34]:5701
+2020-04-09 00:44:04.425  INFO 27302 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5702 [dev] [3.12.6] Connecting to /192.168.0.34:5701, timeout: 10000, bind-any: true
+2020-04-09 00:44:04.438  INFO 27297 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:5701 and /192.168.0.34:56582
+2020-04-09 00:44:04.441  INFO 27302 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5702 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:56582 and /192.168.0.34:5701
+2020-04-09 00:44:10.445  INFO 27297 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:2, ver:2} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436 this
+	Member [192.168.0.34]:5702 - 7ce240ff-43a8-440c-afd6-e6cf70d220d0
+]
+
+2020-04-09 00:44:10.455  INFO 27302 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5702 [dev] [3.12.6] 
+
+Members {size:2, ver:2} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436
+	Member [192.168.0.34]:5702 - 7ce240ff-43a8-440c-afd6-e6cf70d220d0 this
+]
+
+2020-04-09 00:44:11.478  INFO 27302 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTED
+2020-04-09 00:44:11.655  INFO 27302 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:44:12.039  INFO 27302 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:44:12.100  INFO 27302 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:44:12.193  INFO 27302 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:44:12.371  INFO 27302 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:44:12.687  INFO 27302 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:44:13.314  INFO 27302 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:44:13.322  INFO 27302 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:44:14.031  WARN 27302 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:44:14.458  INFO 27302 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:44:15.312  INFO 27302 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0abcec02-fee2-4d3f-847c-7454c3ab6d2f
+
+2020-04-09 00:44:15.556  INFO 27302 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75caecf7, org.springframework.security.web.context.SecurityContextPersistenceFilter@11d0bff5, org.springframework.security.web.header.HeaderWriterFilter@16e3d6d0, org.springframework.security.web.csrf.CsrfFilter@4a467ada, org.springframework.security.web.authentication.logout.LogoutFilter@3733b1f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5466a819, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4198921f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@62b0792, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@795949fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@629dfb5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@318a81a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fd409c1, org.springframework.security.web.session.SessionManagementFilter@56017274, org.springframework.security.web.access.ExceptionTranslationFilter@57a0aeb8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79735611]
+2020-04-09 00:44:15.683  INFO 27302 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:44:15.761  INFO 27302 --- [main] c.j.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 29.476 seconds (JVM running for 30.575)
+2020-04-09 00:44:16.270  INFO 27302 --- [hz.ShutdownThread] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Running shutdown hook... Current state: ACTIVE
+2020-04-09 00:44:16.274  INFO 27302 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:44:16.278  INFO 27302 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:44:16.279  INFO 27297 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Connection[id=1, /192.168.0.34:5701->/192.168.0.34:56582, qualifier=null, endpoint=[192.168.0.34]:5702, alive=false, type=MEMBER] closed. Reason: Connection closed by the other side
+2020-04-09 00:44:16.282  INFO 27302 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:44:16.285  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:44:16.288  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:44:16.304  INFO 27302 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:44:16.389  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:44:16.389  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:44:16.491  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:44:16.491  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:44:16.592  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:44:16.593  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:44:16.593  WARN 27297 --- [hz.hazel-instance.cached.thread-3] c.h.nio.tcp.TcpIpConnectionErrorHandler  : [192.168.0.34]:5701 [dev] [3.12.6] Removing connection to endpoint [192.168.0.34]:5702 Cause => java.net.SocketException {Connection refused to address /192.168.0.34:5702}, Error-Count: 5
+2020-04-09 00:44:16.594  INFO 27297 --- [hz.hazel-instance.cached.thread-3] c.h.i.cluster.impl.MembershipManager     : [192.168.0.34]:5701 [dev] [3.12.6] Removing Member [192.168.0.34]:5702 - 7ce240ff-43a8-440c-afd6-e6cf70d220d0
+2020-04-09 00:44:16.597  INFO 27297 --- [hz.hazel-instance.cached.thread-3] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:3} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436 this
+]
+
+2020-04-09 00:44:16.600  INFO 27297 --- [hz.hazel-instance.cached.thread-4] c.h.t.TransactionManagerService          : [192.168.0.34]:5701 [dev] [3.12.6] Committing/rolling-back live transactions of [192.168.0.34]:5702, UUID: 7ce240ff-43a8-440c-afd6-e6cf70d220d0
+2020-04-09 00:45:45.764  WARN 27318 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:45:50.771  INFO 27318 --- [main] c.j.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests on Jegans-MacBook-Pro.local with PID 27318 (started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:45:50.772  INFO 27318 --- [main] c.j.s.ProductrestapiApplicationTests     : The following profiles are active: testing
+2020-04-09 00:45:51.583  INFO 27318 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:45:51.646  INFO 27318 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 1 JPA repository interfaces.
+2020-04-09 00:45:52.314  INFO 27318 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:45:52.329  INFO 27318 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5702, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5702], bind any local is true
+2020-04-09 00:45:52.344  INFO 27318 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5702
+2020-04-09 00:45:52.345  INFO 27318 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:45:52.571  INFO 27318 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5702 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:45:53.067  INFO 27318 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:45:53.239  INFO 27318 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5702 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:45:53.241  INFO 27318 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5702 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:45:53.246  INFO 27318 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTING
+2020-04-09 00:45:53.434  INFO 27318 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.0.34]:5702 [dev] [3.12.6] Trying to join to discovered node: [192.168.0.34]:5701
+2020-04-09 00:45:53.443  INFO 27318 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5702 [dev] [3.12.6] Connecting to /192.168.0.34:5701, timeout: 10000, bind-any: true
+2020-04-09 00:45:53.454  INFO 27297 --- [hz.hazel-instance.IO.thread-in-2] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:5701 and /192.168.0.34:56699
+2020-04-09 00:45:53.455  INFO 27318 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5702 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:56699 and /192.168.0.34:5701
+2020-04-09 00:45:59.463  INFO 27297 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:2, ver:4} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436 this
+	Member [192.168.0.34]:5702 - bfabc89c-76c5-40f9-8284-194953b02a0a
+]
+
+2020-04-09 00:45:59.471  INFO 27318 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5702 [dev] [3.12.6] 
+
+Members {size:2, ver:4} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436
+	Member [192.168.0.34]:5702 - bfabc89c-76c5-40f9-8284-194953b02a0a this
+]
+
+2020-04-09 00:46:00.494  INFO 27318 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTED
+2020-04-09 00:46:00.649  INFO 27318 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:46:01.000  INFO 27318 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:46:01.060  INFO 27318 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:46:01.140  INFO 27318 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:46:01.309  INFO 27318 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:46:01.643  INFO 27318 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:46:02.220  INFO 27318 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:46:02.228  INFO 27318 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:46:02.761  WARN 27318 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:46:03.123  INFO 27318 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:46:03.833  INFO 27318 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5459f939-f011-4bc6-9f7a-515298b6ba16
+
+2020-04-09 00:46:04.039  INFO 27318 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@281028ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bf0bb93, org.springframework.security.web.header.HeaderWriterFilter@57a0aeb8, org.springframework.security.web.csrf.CsrfFilter@6f986031, org.springframework.security.web.authentication.logout.LogoutFilter@7cc842b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a7b4bb6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@318a81a0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@46ef7340, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3d67e3d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11d0bff5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d6879bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75caecf7, org.springframework.security.web.session.SessionManagementFilter@16e3d6d0, org.springframework.security.web.access.ExceptionTranslationFilter@6bf70600, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73072745]
+2020-04-09 00:46:04.149  INFO 27318 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:46:04.222  INFO 27318 --- [main] c.j.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 28.682 seconds (JVM running for 29.686)
+2020-04-09 00:46:04.488  INFO 27318 --- [hz.ShutdownThread] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Running shutdown hook... Current state: ACTIVE
+2020-04-09 00:46:04.499  INFO 27318 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:46:04.500  INFO 27297 --- [hz.hazel-instance.IO.thread-in-2] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Connection[id=2, /192.168.0.34:5701->/192.168.0.34:56699, qualifier=null, endpoint=[192.168.0.34]:5702, alive=false, type=MEMBER] closed. Reason: Connection closed by the other side
+2020-04-09 00:46:04.504  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:46:04.504  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:46:04.505  INFO 27318 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:46:04.510  INFO 27318 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:46:04.523  INFO 27318 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:46:04.610  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:46:04.611  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:46:04.717  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:46:04.718  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:46:04.821  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:46:04.822  INFO 27297 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:46:04.822  WARN 27297 --- [hz.hazel-instance.cached.thread-3] c.h.nio.tcp.TcpIpConnectionErrorHandler  : [192.168.0.34]:5701 [dev] [3.12.6] Removing connection to endpoint [192.168.0.34]:5702 Cause => java.net.SocketException {Connection refused to address /192.168.0.34:5702}, Error-Count: 5
+2020-04-09 00:46:04.822  INFO 27297 --- [hz.hazel-instance.cached.thread-3] c.h.i.cluster.impl.MembershipManager     : [192.168.0.34]:5701 [dev] [3.12.6] Removing Member [192.168.0.34]:5702 - bfabc89c-76c5-40f9-8284-194953b02a0a
+2020-04-09 00:46:04.823  INFO 27297 --- [hz.hazel-instance.cached.thread-3] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:5} [
+	Member [192.168.0.34]:5701 - 6f78f92e-e237-45b4-967a-12aa2eccd436 this
+]
+
+2020-04-09 00:46:04.823  INFO 27297 --- [hz.hazel-instance.cached.thread-4] c.h.t.TransactionManagerService          : [192.168.0.34]:5701 [dev] [3.12.6] Committing/rolling-back live transactions of [192.168.0.34]:5702, UUID: bfabc89c-76c5-40f9-8284-194953b02a0a
+2020-04-09 00:51:35.092  INFO 27297 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-09 00:51:35.096  INFO 27297 --- [RMI TCP Connection(21)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:51:35.097  INFO 27297 --- [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:51:35.099  INFO 27297 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:51:35.108  INFO 27297 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:51:48.466  WARN 27360 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:51:53.475  INFO 27360 --- [main] c.j.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests on Jegans-MacBook-Pro.local with PID 27360 (started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:51:53.476  INFO 27360 --- [main] c.j.s.ProductrestapiApplicationTests     : The following profiles are active: testing
+2020-04-09 00:51:54.327  INFO 27360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:51:54.388  INFO 27360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 1 JPA repository interfaces.
+2020-04-09 00:51:55.087  INFO 27360 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:51:55.101  INFO 27360 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-09 00:51:55.117  INFO 27360 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-09 00:51:55.117  INFO 27360 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:51:55.353  INFO 27360 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:51:55.854  INFO 27360 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:51:56.028  INFO 27360 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:51:56.030  INFO 27360 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:51:56.036  INFO 27360 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-09 00:51:58.914  INFO 27360 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - c86b9068-32dc-4bde-90fb-2d7cd661b752 this
+]
+
+2020-04-09 00:51:58.943  INFO 27360 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-09 00:51:59.106  INFO 27360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:51:59.456  INFO 27360 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:51:59.519  INFO 27360 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:51:59.595  INFO 27360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:51:59.750  INFO 27360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:52:00.056  INFO 27360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:52:00.628  INFO 27360 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:52:00.636  INFO 27360 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:52:01.162  WARN 27360 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:52:01.529  INFO 27360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:52:02.268  INFO 27360 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d662c685-57a5-4fde-bafa-af968b2b200c
+
+2020-04-09 00:52:02.480  INFO 27360 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47629063, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ca5da54, org.springframework.security.web.header.HeaderWriterFilter@288915a1, org.springframework.security.web.csrf.CsrfFilter@34c2e03d, org.springframework.security.web.authentication.logout.LogoutFilter@36a8ebca, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@593e594f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@be9bf2e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3d67e3d3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5abc488d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45f70f68, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c955487, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14af57c3, org.springframework.security.web.session.SessionManagementFilter@4645a575, org.springframework.security.web.access.ExceptionTranslationFilter@1fd77205, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37922937]
+2020-04-09 00:52:02.587  INFO 27360 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:52:02.657  INFO 27360 --- [main] c.j.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 24.425 seconds (JVM running for 25.462)
+2020-04-09 00:52:17.734  INFO 27360 --- [hz.ShutdownThread] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Running shutdown hook... Current state: ACTIVE
+2020-04-09 00:52:17.740  INFO 27360 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:52:17.744  INFO 27360 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:52:17.747  INFO 27360 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:52:17.760  INFO 27360 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:52:37.002  WARN 27367 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:52:42.008  INFO 27367 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 27367 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:52:42.010  INFO 27367 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-09 00:52:42.749  INFO 27367 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:52:42.795  INFO 27367 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 1 JPA repository interfaces.
+2020-04-09 00:52:43.248  INFO 27367 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 00:52:43.256  INFO 27367 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 00:52:43.256  INFO 27367 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-09 00:52:43.341  INFO 27367 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-09 00:52:43.341  INFO 27367 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1289 ms
+2020-04-09 00:52:43.504  INFO 27367 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:52:43.518  INFO 27367 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-09 00:52:43.525  INFO 27367 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-09 00:52:43.525  INFO 27367 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:52:43.771  INFO 27367 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:52:44.185  INFO 27367 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:52:44.307  INFO 27367 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:52:44.309  INFO 27367 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:52:44.318  INFO 27367 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-09 00:52:46.751  INFO 27367 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - e4882a8d-8bc4-4c41-9b35-91fc6436a73f this
+]
+
+2020-04-09 00:52:46.773  INFO 27367 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-09 00:52:46.947  INFO 27367 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:52:47.256  INFO 27367 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:52:47.294  INFO 27367 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:52:47.353  INFO 27367 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:52:47.500  INFO 27367 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:52:47.734  INFO 27367 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:52:48.413  INFO 27367 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:52:48.419  INFO 27367 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:52:48.735  WARN 27367 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:52:48.872  INFO 27367 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:52:49.167  INFO 27367 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5272f783-eb73-4752-a595-0f1e229684f8
+
+2020-04-09 00:52:49.253  INFO 27367 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2acbe46d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e5a2b74, org.springframework.security.web.header.HeaderWriterFilter@297454f7, org.springframework.security.web.csrf.CsrfFilter@408d12fc, org.springframework.security.web.authentication.logout.LogoutFilter@2ad6895a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7dbd70fd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@73818435, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c6b00f1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@516155b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50628080, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72e1e587, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48126a17, org.springframework.security.web.session.SessionManagementFilter@5f8d4b51, org.springframework.security.web.access.ExceptionTranslationFilter@1f641fb7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@229d508c]
+2020-04-09 00:52:49.291  INFO 27367 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:52:49.360  INFO 27367 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-09 00:52:49.362  INFO 27367 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 22.659 seconds (JVM running for 28.111)
+2020-04-09 00:52:51.065  INFO 27367 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 00:52:51.066  INFO 27367 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 00:52:51.073  INFO 27367 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-09 00:54:01.977  INFO 27367 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-09 00:54:01.981  INFO 27367 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:54:01.982  INFO 27367 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:54:01.984  INFO 27367 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:54:01.996  INFO 27367 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:54:23.769  WARN 27384 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:54:28.779  INFO 27384 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 27384 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:54:28.780  INFO 27384 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-09 00:54:29.523  INFO 27384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:54:29.568  INFO 27384 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 1 JPA repository interfaces.
+2020-04-09 00:54:29.996  INFO 27384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-09 00:54:30.003  INFO 27384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-09 00:54:30.003  INFO 27384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-09 00:54:30.085  INFO 27384 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-09 00:54:30.085  INFO 27384 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1271 ms
+2020-04-09 00:54:30.238  INFO 27384 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:54:30.252  INFO 27384 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-09 00:54:30.258  INFO 27384 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-09 00:54:30.259  INFO 27384 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:54:30.502  INFO 27384 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:54:30.901  INFO 27384 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:54:31.015  INFO 27384 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:54:31.016  INFO 27384 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:54:31.024  INFO 27384 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-09 00:54:33.963  INFO 27384 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b this
+]
+
+2020-04-09 00:54:33.984  INFO 27384 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-09 00:54:34.150  INFO 27384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:54:34.455  INFO 27384 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:54:34.492  INFO 27384 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:54:34.546  INFO 27384 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:54:34.681  INFO 27384 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:54:34.768  INFO 27384 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:54:35.377  INFO 27384 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:54:35.383  INFO 27384 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:54:35.684  WARN 27384 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:54:35.795  INFO 27384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:54:36.052  INFO 27384 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:54:36.107  INFO 27384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-09 00:54:36.109  INFO 27384 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 22.637 seconds (JVM running for 28.102)
+2020-04-09 00:54:37.809  INFO 27384 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-09 00:54:37.810  INFO 27384 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-09 00:54:37.816  INFO 27384 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-04-09 00:55:48.707  WARN 27394 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:55:53.714  INFO 27394 --- [main] c.j.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests on Jegans-MacBook-Pro.local with PID 27394 (started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:55:53.714  INFO 27394 --- [main] c.j.s.ProductrestapiApplicationTests     : The following profiles are active: testing
+2020-04-09 00:55:54.461  INFO 27394 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:55:54.526  INFO 27394 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 1 JPA repository interfaces.
+2020-04-09 00:55:55.194  INFO 27394 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:55:55.209  INFO 27394 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5702, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5702], bind any local is true
+2020-04-09 00:55:55.225  INFO 27394 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5702
+2020-04-09 00:55:55.225  INFO 27394 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:55:55.452  INFO 27394 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5702 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:55:55.943  INFO 27394 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:55:56.116  INFO 27394 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5702 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:55:56.118  INFO 27394 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5702 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:55:56.123  INFO 27394 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTING
+2020-04-09 00:55:56.333  INFO 27394 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.0.34]:5702 [dev] [3.12.6] Trying to join to discovered node: [192.168.0.34]:5701
+2020-04-09 00:55:56.343  INFO 27394 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5702 [dev] [3.12.6] Connecting to /192.168.0.34:5701, timeout: 10000, bind-any: true
+2020-04-09 00:55:56.355  INFO 27384 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:5701 and /192.168.0.34:57242
+2020-04-09 00:55:56.358  INFO 27394 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5702 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:57242 and /192.168.0.34:5701
+2020-04-09 00:56:02.364  INFO 27384 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:2, ver:2} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b this
+	Member [192.168.0.34]:5702 - c6960c6b-97d0-44df-9e26-a78b70ca0f36
+]
+
+2020-04-09 00:56:02.374  INFO 27394 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5702 [dev] [3.12.6] 
+
+Members {size:2, ver:2} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b
+	Member [192.168.0.34]:5702 - c6960c6b-97d0-44df-9e26-a78b70ca0f36 this
+]
+
+2020-04-09 00:56:03.394  INFO 27394 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTED
+2020-04-09 00:56:03.559  INFO 27394 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:56:03.923  INFO 27394 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:56:03.984  INFO 27394 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:56:04.057  INFO 27394 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:56:04.231  INFO 27394 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:56:04.552  INFO 27394 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:56:05.129  INFO 27394 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:56:05.137  INFO 27394 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:56:05.665  WARN 27394 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:56:05.993  INFO 27394 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:56:06.664  INFO 27394 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:56:06.727  INFO 27394 --- [main] c.j.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 28.249 seconds (JVM running for 29.231)
+2020-04-09 00:56:07.054  INFO 27384 --- [http-nio-8080-exec-1] c.h.i.p.impl.PartitionStateManager       : [192.168.0.34]:5701 [dev] [3.12.6] Initializing cluster partition table arrangement...
+2020-04-09 00:56:07.343  INFO 27394 --- [hz.ShutdownThread] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Running shutdown hook... Current state: ACTIVE
+2020-04-09 00:56:07.347  INFO 27394 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:56:07.351  INFO 27394 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:56:07.352  INFO 27384 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Connection[id=1, /192.168.0.34:5701->/192.168.0.34:57242, qualifier=null, endpoint=[192.168.0.34]:5702, alive=false, type=MEMBER] closed. Reason: Connection closed by the other side
+2020-04-09 00:56:07.354  INFO 27394 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:56:07.359  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:56:07.364  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:56:07.376  INFO 27394 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:56:07.468  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:56:07.469  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:56:07.573  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:56:07.573  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:56:07.678  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:56:07.679  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:56:07.679  WARN 27384 --- [hz.hazel-instance.cached.thread-2] c.h.nio.tcp.TcpIpConnectionErrorHandler  : [192.168.0.34]:5701 [dev] [3.12.6] Removing connection to endpoint [192.168.0.34]:5702 Cause => java.net.SocketException {Connection refused to address /192.168.0.34:5702}, Error-Count: 5
+2020-04-09 00:56:07.680  INFO 27384 --- [hz.hazel-instance.cached.thread-2] c.h.i.cluster.impl.MembershipManager     : [192.168.0.34]:5701 [dev] [3.12.6] Removing Member [192.168.0.34]:5702 - c6960c6b-97d0-44df-9e26-a78b70ca0f36
+2020-04-09 00:56:07.681  INFO 27384 --- [hz.hazel-instance.cached.thread-2] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:3} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b this
+]
+
+2020-04-09 00:56:07.684  INFO 27384 --- [hz.hazel-instance.cached.thread-5] c.h.t.TransactionManagerService          : [192.168.0.34]:5701 [dev] [3.12.6] Committing/rolling-back live transactions of [192.168.0.34]:5702, UUID: c6960c6b-97d0-44df-9e26-a78b70ca0f36
+2020-04-09 00:56:07.809  INFO 27384 --- [hz.hazel-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.0.34]:5701 [dev] [3.12.6] Partition balance is ok, no need to re-partition cluster data... 
+2020-04-09 00:56:46.575  WARN 27402 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-09 00:56:51.583  INFO 27402 --- [main] c.j.s.ProductrestapiApplicationTests     : Starting ProductrestapiApplicationTests on Jegans-MacBook-Pro.local with PID 27402 (started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-09 00:56:51.584  INFO 27402 --- [main] c.j.s.ProductrestapiApplicationTests     : The following profiles are active: testing
+2020-04-09 00:56:52.372  INFO 27402 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-09 00:56:52.434  INFO 27402 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 1 JPA repository interfaces.
+2020-04-09 00:56:53.084  INFO 27402 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-09 00:56:53.100  INFO 27402 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5702, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5702], bind any local is true
+2020-04-09 00:56:53.115  INFO 27402 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5702
+2020-04-09 00:56:53.115  INFO 27402 --- [main] com.hazelcast.system                     : [192.168.0.34]:5702 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-09 00:56:53.346  INFO 27402 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5702 [dev] [3.12.6] Backpressure is disabled
+2020-04-09 00:56:53.849  INFO 27402 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-09 00:56:54.022  INFO 27402 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5702 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-09 00:56:54.024  INFO 27402 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5702 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-09 00:56:54.029  INFO 27402 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTING
+2020-04-09 00:56:54.123  INFO 27402 --- [main] c.h.i.cluster.impl.MulticastJoiner       : [192.168.0.34]:5702 [dev] [3.12.6] Trying to join to discovered node: [192.168.0.34]:5701
+2020-04-09 00:56:54.133  INFO 27402 --- [hz.hazel-instance.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5702 [dev] [3.12.6] Connecting to /192.168.0.34:5701, timeout: 10000, bind-any: true
+2020-04-09 00:56:54.144  INFO 27384 --- [hz.hazel-instance.IO.thread-in-2] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:5701 and /192.168.0.34:57287
+2020-04-09 00:56:54.146  INFO 27402 --- [hz.hazel-instance.IO.thread-in-0] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5702 [dev] [3.12.6] Initialized new cluster connection between /192.168.0.34:57287 and /192.168.0.34:5701
+2020-04-09 00:57:00.158  INFO 27384 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:2, ver:4} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b this
+	Member [192.168.0.34]:5702 - 64432a03-ed9d-4933-a1cb-513e9df6e430
+]
+
+2020-04-09 00:57:00.169  INFO 27402 --- [hz.hazel-instance.priority-generic-operation.thread-0] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5702 [dev] [3.12.6] 
+
+Members {size:2, ver:4} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b
+	Member [192.168.0.34]:5702 - 64432a03-ed9d-4933-a1cb-513e9df6e430 this
+]
+
+2020-04-09 00:57:00.420  INFO 27384 --- [hz.hazel-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.0.34]:5701 [dev] [3.12.6] Re-partitioning cluster data... Migration queue size: 271
+2020-04-09 00:57:01.190  INFO 27402 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5702 [dev] [3.12.6] [192.168.0.34]:5702 is STARTED
+2020-04-09 00:57:01.347  INFO 27402 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-09 00:57:01.737  INFO 27402 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-09 00:57:01.798  INFO 27402 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-09 00:57:01.866  INFO 27384 --- [hz.hazel-instance.migration] c.h.i.partition.impl.MigrationThread     : [192.168.0.34]:5701 [dev] [3.12.6] All migration tasks have been completed. (lastRepartitionTime=Thu Apr 09 00:57:00 CDT 2020, completedMigrations=271, totalCompletedMigrations=271, elapsedMigrationTime=439ms, totalElapsedMigrationTime=439ms)
+2020-04-09 00:57:01.883  INFO 27402 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-09 00:57:02.232  INFO 27402 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-09 00:57:02.361  INFO 27402 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-09 00:57:02.945  INFO 27402 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-09 00:57:02.953  INFO 27402 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:57:03.468  WARN 27402 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-09 00:57:03.824  INFO 27402 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:57:04.512  INFO 27402 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-09 00:57:04.581  INFO 27402 --- [main] c.j.s.ProductrestapiApplicationTests     : Started ProductrestapiApplicationTests in 28.233 seconds (JVM running for 29.228)
+2020-04-09 00:57:04.845  INFO 27402 --- [hz.ShutdownThread] com.hazelcast.instance.Node              : [192.168.0.34]:5702 [dev] [3.12.6] Running shutdown hook... Current state: ACTIVE
+2020-04-09 00:57:04.852  INFO 27402 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-09 00:57:04.856  INFO 27384 --- [hz.hazel-instance.IO.thread-in-2] com.hazelcast.nio.tcp.TcpIpConnection    : [192.168.0.34]:5701 [dev] [3.12.6] Connection[id=2, /192.168.0.34:5701->/192.168.0.34:57287, qualifier=null, endpoint=[192.168.0.34]:5702, alive=false, type=MEMBER] closed. Reason: Connection closed by the other side
+2020-04-09 00:57:04.856  INFO 27402 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-09 00:57:04.858  INFO 27384 --- [hz.hazel-instance.cached.thread-1] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:57:04.859  INFO 27384 --- [hz.hazel-instance.cached.thread-1] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:57:04.860  INFO 27402 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-09 00:57:04.880  INFO 27402 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-09 00:57:04.965  INFO 27384 --- [hz.hazel-instance.cached.thread-1] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:57:04.965  INFO 27384 --- [hz.hazel-instance.cached.thread-1] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:57:05.069  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:57:05.070  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:57:05.175  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Connecting to /192.168.0.34:5702, timeout: 10000, bind-any: true
+2020-04-09 00:57:05.175  INFO 27384 --- [hz.hazel-instance.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector     : [192.168.0.34]:5701 [dev] [3.12.6] Could not connect to: /192.168.0.34:5702. Reason: SocketException[Connection refused to address /192.168.0.34:5702]
+2020-04-09 00:57:05.175  WARN 27384 --- [hz.hazel-instance.cached.thread-2] c.h.nio.tcp.TcpIpConnectionErrorHandler  : [192.168.0.34]:5701 [dev] [3.12.6] Removing connection to endpoint [192.168.0.34]:5702 Cause => java.net.SocketException {Connection refused to address /192.168.0.34:5702}, Error-Count: 5
+2020-04-09 00:57:05.176  INFO 27384 --- [hz.hazel-instance.cached.thread-2] c.h.i.cluster.impl.MembershipManager     : [192.168.0.34]:5701 [dev] [3.12.6] Removing Member [192.168.0.34]:5702 - 64432a03-ed9d-4933-a1cb-513e9df6e430
+2020-04-09 00:57:05.176  INFO 27384 --- [hz.hazel-instance.cached.thread-2] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:5} [
+	Member [192.168.0.34]:5701 - e56d984f-4289-4b1d-80af-386d32cedb6b this
+]
+
+2020-04-09 00:57:05.176  INFO 27384 --- [hz.hazel-instance.cached.thread-5] c.h.t.TransactionManagerService          : [192.168.0.34]:5701 [dev] [3.12.6] Committing/rolling-back live transactions of [192.168.0.34]:5702, UUID: 64432a03-ed9d-4933-a1cb-513e9df6e430
+2020-04-09 00:57:05.182  INFO 27384 --- [hz.hazel-instance.migration] c.h.i.partition.impl.MigrationManager    : [192.168.0.34]:5701 [dev] [3.12.6] Partition balance is ok, no need to re-partition cluster data... 
+2020-04-09 01:57:18.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 2064046 ms
+2020-04-09 01:57:18.687  INFO 27384 --- [hz.hazel-instance.cached.thread-8] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 01:22:50.952 to 2020-04-09 01:57:18.686 since last heartbeat (+2062734 ms)
+2020-04-09 01:57:19.095  WARN 27384 --- [hz.hazel-instance.cached.thread-8] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 2062734 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 01:57:23.698  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 2062740 ms
+2020-04-09 01:57:27.455  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m52s740ms).
+2020-04-09 03:58:09.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 7199368 ms
+2020-04-09 03:58:11.066  INFO 27384 --- [hz.hazel-instance.cached.thread-5] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 01:58:07.628 to 2020-04-09 03:58:11.065 since last heartbeat (+7198437 ms)
+2020-04-09 03:58:11.066  WARN 27384 --- [hz.hazel-instance.cached.thread-5] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 7198437 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 03:58:20.627  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 7197993 ms
+2020-04-09 03:58:24.406  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26s946ms).
+2020-04-09 05:59:00.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 7199372 ms
+2020-04-09 05:59:00.007  INFO 27384 --- [hz.hazel-instance.cached.thread-2] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 03:58:55.621 to 2020-04-09 05:59:00.007 since last heartbeat (+7199386 ms)
+2020-04-09 05:59:01.102  WARN 27384 --- [hz.hazel-instance.cached.thread-2] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 7199386 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 05:59:03.652  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 7198026 ms
+2020-04-09 05:59:23.012  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28s597ms).
+2020-04-09 07:59:52.003  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28s991ms).
+2020-04-09 07:59:52.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 7199779 ms
+2020-04-09 07:59:52.715  INFO 27384 --- [hz.hazel-instance.cached.thread-6] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 05:59:49.212 to 2020-04-09 07:59:52.714 since last heartbeat (+7198502 ms)
+2020-04-09 07:59:52.715  WARN 27384 --- [hz.hazel-instance.cached.thread-6] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 7198502 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 08:00:02.649  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 7198431 ms
+2020-04-09 09:30:01.002  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 5356351 ms
+2020-04-09 09:30:03.570  INFO 27384 --- [hz.hazel-instance.cached.thread-6] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 08:00:42.639 to 2020-04-09 09:30:03.570 since last heartbeat (+5355931 ms)
+2020-04-09 09:30:03.570  WARN 27384 --- [hz.hazel-instance.cached.thread-6] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 5355931 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 09:30:03.579  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 5355934 ms
+2020-04-09 09:30:07.700  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h29m45s762ms).
+2020-04-09 11:00:00.003  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m21s720ms).
+2020-04-09 11:00:00.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 1792718 ms
+2020-04-09 11:00:00.011  INFO 27384 --- [hz.hazel-instance.cached.thread-15] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 10:30:03.277 to 2020-04-09 11:00:00.011 since last heartbeat (+1791734 ms)
+2020-04-09 11:00:01.122  WARN 27384 --- [hz.hazel-instance.cached.thread-15] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 1791734 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 11:00:09.887  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 1791605 ms
+2020-04-09 11:18:34.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 336136 ms
+2020-04-09 11:18:34.840  INFO 27384 --- [hz.hazel-instance.cached.thread-8] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 11:12:54.856 to 2020-04-09 11:18:34.840 since last heartbeat (+334984 ms)
+2020-04-09 11:18:35.099  WARN 27384 --- [hz.hazel-instance.cached.thread-8] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 334984 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 11:18:37.080  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m5s868ms).
+2020-04-09 11:18:45.724  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 335860 ms
+2020-04-09 12:25:08.005  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 234382 ms
+2020-04-09 12:25:09.098  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 233474 ms
+2020-04-09 12:25:08.943  INFO 27384 --- [hz.hazel-instance.cached.thread-8] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] System clock apparently jumped from 2020-04-09 12:21:10.612 to 2020-04-09 12:25:08.942 since last heartbeat (+233330 ms)
+2020-04-09 12:25:09.100  WARN 27384 --- [hz.hazel-instance.cached.thread-8] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 233330 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 12:25:31.177  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m23s696ms).
+2020-04-09 13:22:55.003  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] MonitorInvocationsTask delayed 35810 ms
+2020-04-09 13:22:55.008  WARN 27384 --- [hz.hazel-instance.cached.thread-5] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 35825 ms, Heartbeat-Timeout: 60000 ms
+2020-04-09 13:23:00.345  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 36152 ms
+2020-04-09 13:23:07.703  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s162ms).
