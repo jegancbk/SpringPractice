@@ -85,3 +85,283 @@ java.io.IOException: Network is unreachable (sendto failed)
 2020-04-10 15:50:13.673  WARN 27384 --- [hz.hazel-instance.cached.thread-9] c.h.i.c.impl.ClusterHeartbeatManager     : [192.168.0.34]:5701 [dev] [3.12.6] Resetting heartbeat timestamps because of huge system clock jump! Clock-Jump: 1030977 ms, Heartbeat-Timeout: 60000 ms
 2020-04-10 15:50:19.001  WARN 27384 --- [hz.hazel-instance.InvocationMonitorThread] c.h.s.i.o.impl.InvocationMonitor         : [192.168.0.34]:5701 [dev] [3.12.6] BroadcastOperationControlTask delayed 1031295 ms
 2020-04-10 15:50:36.806  WARN 27384 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m41s307ms).
+2020-04-10 16:56:26.270  INFO 27384 --- [RMI TCP Connection(1107)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-10 16:56:26.359  INFO 27384 --- [RMI TCP Connection(1107)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 16:56:26.378  INFO 27384 --- [RMI TCP Connection(1107)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 16:56:26.447  INFO 27384 --- [RMI TCP Connection(1107)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-10 16:56:26.473  INFO 27384 --- [RMI TCP Connection(1107)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-10 16:57:16.184  WARN 39987 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-10 16:57:21.194  INFO 39987 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 39987 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-10 16:57:21.196  INFO 39987 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 16:57:22.110  INFO 39987 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-10 16:57:22.160  INFO 39987 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 1 JPA repository interfaces.
+2020-04-10 16:57:22.646  INFO 39987 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 16:57:22.652  INFO 39987 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 16:57:22.653  INFO 39987 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 16:57:22.727  INFO 39987 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-10 16:57:22.728  INFO 39987 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1497 ms
+2020-04-10 16:57:22.897  INFO 39987 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-10 16:57:22.912  INFO 39987 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-10 16:57:22.919  INFO 39987 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-10 16:57:22.920  INFO 39987 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-10 16:57:23.202  INFO 39987 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-10 16:57:23.655  INFO 39987 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-10 16:57:23.794  INFO 39987 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-10 16:57:23.795  INFO 39987 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-10 16:57:23.806  INFO 39987 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-10 16:57:26.411  INFO 39987 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - ad0b8250-cfb6-41a8-ba47-68f3bafe166a this
+]
+
+2020-04-10 16:57:26.435  INFO 39987 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-10 16:57:26.627  INFO 39987 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-10 16:57:26.948  INFO 39987 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-10 16:57:26.991  INFO 39987 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-10 16:57:27.050  INFO 39987 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-10 16:57:27.209  INFO 39987 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-10 16:57:27.308  INFO 39987 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-10 16:57:28.036  INFO 39987 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-10 16:57:28.042  INFO 39987 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 16:57:28.504  WARN 39987 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-10 16:57:28.636  INFO 39987 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-10 16:57:28.707  INFO 39987 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-10 16:57:28.806  INFO 39987 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 16:57:29.047  INFO 39987 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-10 16:57:29.064  INFO 39987 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-10 16:57:29.112  INFO 39987 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-10 16:57:29.258  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-04-10 16:57:29.263  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-04-10 16:57:29.265  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-04-10 16:57:29.267  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-04-10 16:57:29.270  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-04-10 16:57:29.273  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-04-10 16:57:29.276  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-04-10 16:57:29.278  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-04-10 16:57:29.280  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-04-10 16:57:29.281  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-04-10 16:57:29.283  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-04-10 16:57:29.285  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-04-10 16:57:29.286  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-04-10 16:57:29.290  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-04-10 16:57:29.297  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-04-10 16:57:29.299  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-04-10 16:57:29.301  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-04-10 16:57:29.303  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-04-10 16:57:29.304  INFO 39987 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-04-10 16:57:29.360  INFO 39987 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-10 16:57:29.362  INFO 39987 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 23.49 seconds (JVM running for 28.982)
+2020-04-10 16:57:30.296  INFO 39987 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 16:57:30.297  INFO 39987 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 16:57:30.304  INFO 39987 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-10 17:00:47.410  INFO 39987 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-10 17:00:47.415  INFO 39987 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 17:00:47.417  INFO 39987 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 17:00:47.419  INFO 39987 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-10 17:00:47.431  INFO 39987 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-10 17:01:08.520  WARN 40035 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-10 17:01:13.528  INFO 40035 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 40035 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-10 17:01:13.529  INFO 40035 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 17:01:14.448  INFO 40035 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-10 17:01:14.499  INFO 40035 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 1 JPA repository interfaces.
+2020-04-10 17:01:14.980  INFO 40035 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 17:01:14.986  INFO 40035 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 17:01:14.987  INFO 40035 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 17:01:15.094  INFO 40035 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-10 17:01:15.095  INFO 40035 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1533 ms
+2020-04-10 17:01:15.269  INFO 40035 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-10 17:01:15.284  INFO 40035 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-10 17:01:15.292  INFO 40035 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-10 17:01:15.293  INFO 40035 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-10 17:01:15.575  INFO 40035 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-10 17:01:16.029  INFO 40035 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-10 17:01:16.162  INFO 40035 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-10 17:01:16.163  INFO 40035 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-10 17:01:16.174  INFO 40035 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-10 17:01:18.817  INFO 40035 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - 964f4719-bd62-4abb-a8b2-a9442fa10926 this
+]
+
+2020-04-10 17:01:18.838  INFO 40035 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-10 17:01:19.013  INFO 40035 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-10 17:01:19.324  INFO 40035 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-10 17:01:19.363  INFO 40035 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-10 17:01:19.421  INFO 40035 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-10 17:01:19.558  INFO 40035 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-10 17:01:19.643  INFO 40035 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-10 17:01:20.300  INFO 40035 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-10 17:01:20.307  INFO 40035 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 17:01:20.758  WARN 40035 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-10 17:01:20.889  INFO 40035 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-10 17:01:20.966  INFO 40035 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-10 17:01:21.061  INFO 40035 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 17:01:21.289  INFO 40035 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-10 17:01:21.305  INFO 40035 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-10 17:01:21.349  INFO 40035 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-10 17:01:21.484  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-04-10 17:01:21.486  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-04-10 17:01:21.488  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-04-10 17:01:21.489  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-04-10 17:01:21.490  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-04-10 17:01:21.492  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-04-10 17:01:21.494  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-04-10 17:01:21.496  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-04-10 17:01:21.499  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-04-10 17:01:21.500  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-04-10 17:01:21.502  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-04-10 17:01:21.504  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-04-10 17:01:21.508  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-04-10 17:01:21.509  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-04-10 17:01:21.511  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-04-10 17:01:21.512  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-04-10 17:01:21.513  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-04-10 17:01:21.514  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-04-10 17:01:21.515  INFO 40035 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-04-10 17:01:21.562  INFO 40035 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-10 17:01:21.564  INFO 40035 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 23.366 seconds (JVM running for 28.848)
+2020-04-10 17:01:22.545  INFO 40035 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 17:01:22.546  INFO 40035 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 17:01:22.553  INFO 40035 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-10 17:08:03.822  INFO 40035 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-10 17:08:03.828  INFO 40035 --- [RMI TCP Connection(18)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 17:08:03.830  INFO 40035 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 17:08:03.832  INFO 40035 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-10 17:08:03.842  INFO 40035 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-10 17:08:23.121  WARN 40091 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-10 17:08:28.131  INFO 40091 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 40091 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-10 17:08:28.131  INFO 40091 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 17:08:29.038  INFO 40091 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-10 17:08:29.085  INFO 40091 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-04-10 17:08:29.564  INFO 40091 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 17:08:29.572  INFO 40091 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 17:08:29.573  INFO 40091 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 17:08:29.646  INFO 40091 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-10 17:08:29.646  INFO 40091 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1481 ms
+2020-04-10 17:08:29.811  INFO 40091 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-10 17:08:29.826  INFO 40091 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-10 17:08:29.834  INFO 40091 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-10 17:08:29.834  INFO 40091 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-10 17:08:30.114  INFO 40091 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-10 17:08:30.555  INFO 40091 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-10 17:08:30.682  INFO 40091 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-10 17:08:30.684  INFO 40091 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-10 17:08:30.693  INFO 40091 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-10 17:08:32.879  INFO 40091 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - 469ac563-a497-4ccd-844e-0f096074a248 this
+]
+
+2020-04-10 17:08:32.900  INFO 40091 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-10 17:08:33.077  INFO 40091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-10 17:08:33.394  INFO 40091 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-10 17:08:33.433  INFO 40091 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-10 17:08:33.497  INFO 40091 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-10 17:08:33.624  INFO 40091 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-10 17:08:33.712  INFO 40091 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-10 17:08:34.390  INFO 40091 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-10 17:08:34.397  INFO 40091 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 17:08:34.831  WARN 40091 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-10 17:08:34.953  INFO 40091 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-10 17:08:35.026  INFO 40091 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-10 17:08:35.132  INFO 40091 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 17:08:35.363  INFO 40091 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-10 17:08:35.377  INFO 40091 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-10 17:08:35.427  INFO 40091 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-10 17:08:35.557  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-04-10 17:08:35.560  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-04-10 17:08:35.561  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-04-10 17:08:35.563  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-04-10 17:08:35.565  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-04-10 17:08:35.567  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-04-10 17:08:35.568  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-04-10 17:08:35.570  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-04-10 17:08:35.571  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-04-10 17:08:35.573  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-04-10 17:08:35.574  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-04-10 17:08:35.575  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-04-10 17:08:35.578  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-04-10 17:08:35.579  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-04-10 17:08:35.580  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-04-10 17:08:35.581  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-04-10 17:08:35.582  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-04-10 17:08:35.584  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-04-10 17:08:35.586  INFO 40091 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-04-10 17:08:35.633  INFO 40091 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-10 17:08:35.635  INFO 40091 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 22.814 seconds (JVM running for 28.323)
+2020-04-10 17:08:37.291  INFO 40091 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 17:08:37.291  INFO 40091 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 17:08:37.299  INFO 40091 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-04-10 17:11:49.022  INFO 40091 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-10 17:11:49.026  INFO 40091 --- [RMI TCP Connection(15)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-10 17:11:49.028  INFO 40091 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 17:11:49.031  INFO 40091 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-10 17:11:49.041  INFO 40091 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-10 17:12:08.250  WARN 40116 --- [main] o.s.boot.StartupInfoLogger               : InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-10 17:12:13.260  INFO 40116 --- [main] c.j.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication on Jegans-MacBook-Pro.local with PID 40116 (/Users/jegan/Documents/spring-workspace/productrestapi/target/classes started by jegan in /Users/jegan/Documents/spring-workspace/productrestapi)
+2020-04-10 17:12:13.261  INFO 40116 --- [main] c.j.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2020-04-10 17:12:14.155  INFO 40116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-10 17:12:14.203  INFO 40116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 JPA repository interfaces.
+2020-04-10 17:12:14.683  INFO 40116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-10 17:12:14.690  INFO 40116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 17:12:14.691  INFO 40116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-10 17:12:14.765  INFO 40116 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2020-04-10 17:12:14.766  INFO 40116 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1470 ms
+2020-04-10 17:12:14.936  INFO 40116 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-04-10 17:12:14.950  INFO 40116 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.6] Picked [192.168.0.34]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-04-10 17:12:14.957  INFO 40116 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Hazelcast 3.12.6 (20200130 - be02cc5) starting at [192.168.0.34]:5701
+2020-04-10 17:12:14.957  INFO 40116 --- [main] com.hazelcast.system                     : [192.168.0.34]:5701 [dev] [3.12.6] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2020-04-10 17:12:15.236  INFO 40116 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.0.34]:5701 [dev] [3.12.6] Backpressure is disabled
+2020-04-10 17:12:15.676  INFO 40116 --- [main] com.hazelcast.instance.Node              : [192.168.0.34]:5701 [dev] [3.12.6] Creating MulticastJoiner
+2020-04-10 17:12:15.803  INFO 40116 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.0.34]:5701 [dev] [3.12.6] Starting 8 partition threads and 5 generic threads (1 dedicated for priority tasks)
+2020-04-10 17:12:15.805  INFO 40116 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.0.34]:5701 [dev] [3.12.6] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-04-10 17:12:15.815  INFO 40116 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTING
+2020-04-10 17:12:18.774  INFO 40116 --- [main] c.h.internal.cluster.ClusterService      : [192.168.0.34]:5701 [dev] [3.12.6] 
+
+Members {size:1, ver:1} [
+	Member [192.168.0.34]:5701 - 37795d1c-521b-4153-ad36-f327d200ac08 this
+]
+
+2020-04-10 17:12:18.794  INFO 40116 --- [main] com.hazelcast.core.LifecycleService      : [192.168.0.34]:5701 [dev] [3.12.6] [192.168.0.34]:5701 is STARTED
+2020-04-10 17:12:18.972  INFO 40116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-10 17:12:19.280  INFO 40116 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-10 17:12:19.318  INFO 40116 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-04-10 17:12:19.374  INFO 40116 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-04-10 17:12:19.502  INFO 40116 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-04-10 17:12:19.589  INFO 40116 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-04-10 17:12:20.231  INFO 40116 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-04-10 17:12:20.239  INFO 40116 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-10 17:12:20.672  WARN 40116 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-10 17:12:20.795  INFO 40116 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-04-10 17:12:20.870  INFO 40116 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-04-10 17:12:20.965  INFO 40116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-10 17:12:21.193  INFO 40116 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-10 17:12:21.208  INFO 40116 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-10 17:12:21.252  INFO 40116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-10 17:12:21.381  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-04-10 17:12:21.384  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2020-04-10 17:12:21.386  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-04-10 17:12:21.387  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2020-04-10 17:12:21.389  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2020-04-10 17:12:21.390  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2020-04-10 17:12:21.391  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2020-04-10 17:12:21.393  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2020-04-10 17:12:21.394  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2020-04-10 17:12:21.395  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2020-04-10 17:12:21.396  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2020-04-10 17:12:21.397  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2020-04-10 17:12:21.400  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2020-04-10 17:12:21.401  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2020-04-10 17:12:21.402  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2020-04-10 17:12:21.404  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2020-04-10 17:12:21.406  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2020-04-10 17:12:21.407  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2020-04-10 17:12:21.409  INFO 40116 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2020-04-10 17:12:21.458  INFO 40116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2020-04-10 17:12:21.460  INFO 40116 --- [main] c.j.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 23.509 seconds (JVM running for 28.972)
+2020-04-10 17:12:22.299  INFO 40116 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-10 17:12:22.300  INFO 40116 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-10 17:12:22.308  INFO 40116 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
